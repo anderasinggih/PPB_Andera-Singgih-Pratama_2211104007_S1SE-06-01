@@ -1,4 +1,5 @@
-# Cover #
+# Cover
+
 <div align="center">
 LAPORAN PRAKTIKUM <br>
 PEMROGRAMAN PERANGKAT BERGERAK <br>
@@ -11,7 +12,7 @@ ANTARMUKA PENGGUNA LANJUTAN <br>
 <br>
 
 Disusun Oleh: <br>
-Wahyu Isnantia Qodri Ghozali/2211104021 <br>
+Andera Singgih Pratama/2211104007 <br>
 SE-06-01 <br>
 
 <br>
@@ -28,7 +29,7 @@ Yudha Islami Sulistya, S.Kom., M.Cs <br>
 <br>
 
 PROGRAM STUDI S1 REKAYASSA PERANGKAT LUNAK <br>
-FAKULTAS INFORMATIKA <br> 
+FAKULTAS INFORMATIKA <br>
 TELKOM UNIVERSITY PURWOKERTO <br>
 
 </div>
@@ -36,7 +37,9 @@ TELKOM UNIVERSITY PURWOKERTO <br>
 # Guided
 
 ## 1. ListView.builder <br>
+
 Source Code:
+
 ```
 import 'package:flutter/material.dart';
 
@@ -71,10 +74,14 @@ class ListViewBuilderExample extends StatelessWidget {
 }
 
 ```
-Output Code: 
+
+Output Code:
 ![listviewbuilder](img/1.listView.builder.png)
+
 ## 2. ListView.separated
+
 Source Code:
+
 ```
 import 'package:flutter/material.dart';
 
@@ -109,10 +116,14 @@ class ListViewSeparatedExample extends StatelessWidget {
 }
 
 ```
-Output Code: 
+
+Output Code:
 ![listviewseparated](img/2.listView.separated.png)
+
 ## 3. Flexible and Expanded
+
 Source Code:
+
 ```
 import 'package:flutter/material.dart';
 void main() {
@@ -193,9 +204,13 @@ class _FlexibleExpandedScreenState extends State<FlexibleExpandedScreen> {
   }
 }
 ```
+
 ![flexibleandexpanded](img/3.flexibleAndExpanded.png)
+
 ## 4. CustomScrollView
+
 Source Code:
+
 ```
 import 'package:flutter/material.dart';
 
@@ -257,11 +272,14 @@ class CustomScrollViewExample extends StatelessWidget {
   }
 }
 ```
+
 Output Code:
 ![customscrollview](img/4.customScrollView.png)
 
 # Unguided
+
 Source Code:
+
 ```
 import 'package:flutter/material.dart';
 
@@ -326,7 +344,7 @@ class _MyHomePageState extends State<MyHomePage> {
           'Hutan yang berada di kawasan wisata Baturaden, yang berada di ketinggian 750 mdpl. Tempat ini cocok menjadi tempat wisata dari berbagai kalangan. Tidak hanya pemandangnnya saja yang indah, Hutan Pinus limpakuwus juga memiliki fasilitas penunjang seperti montain slide, playground, flyng fox, paint ball, dan ATV.',
     },
     {
-      'image': 
+      'image':
           'img/5.NewSmallWorld.png',
       'title': 'New Small World',
       'description':
@@ -383,7 +401,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       const SizedBox(height: 8),
                       ElevatedButton(
                         onPressed: () {
-                          
+
                         },
                         child: const Text('Info Lebih Lanjut'),
                       ),
