@@ -5,13 +5,15 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
   // Controller for PageView
-  PageController _pageController = PageController();
+  final PageController _pageController = PageController();
   int _selectedIndex = 0;
 
   // Function to handle page navigation
@@ -19,7 +21,7 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       _selectedIndex = index;
       _pageController.animateToPage(index,
-          duration: Duration(milliseconds: 300), curve: Curves.easeInOut);
+          duration: const Duration(milliseconds: 300), curve: Curves.easeInOut);
     });
   }
 
@@ -36,7 +38,7 @@ class _MyAppState extends State<MyApp> {
                 _selectedIndex = index;
               });
             },
-            children: [
+            children: const [
               // Pages for Home, Email, and Profile
               Center(child: Text('Home page', style: TextStyle(fontSize: 24))),
               Center(child: Text('Email page', style: TextStyle(fontSize: 24))),
