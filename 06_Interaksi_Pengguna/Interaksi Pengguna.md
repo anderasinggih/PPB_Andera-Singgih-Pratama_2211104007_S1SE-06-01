@@ -1,4 +1,5 @@
-# Cover #
+# Cover
+
 <div align="center">
 LAPORAN PRAKTIKUM <br>
 PEMROGRAMAN PERANGKAT BERGERAK <br>
@@ -11,7 +12,7 @@ INTERAKSI PENGGUNA <br>
 <br>
 
 Disusun Oleh: <br>
-Wahyu Isnantia Qodri Ghozali/2211104021 <br>
+Andera Singgih Pratama/2211104007 <br>
 SE-06-01 <br>
 
 <br>
@@ -28,17 +29,20 @@ Yudha Islami Sulistya, S.Kom., M.Cs <br>
 <br>
 
 PROGRAM STUDI S1 REKAYASSA PERANGKAT LUNAK <br>
-FAKULTAS INFORMATIKA <br> 
+FAKULTAS INFORMATIKA <br>
 TELKOM UNIVERSITY PURWOKERTO <br>
 
 </div>
 
 # Guided
+
 ## 1. Packages
-Secara singkat, dart package terdapat pada direktori yang didalamnya terdapat file pubspec.yaml. Contoh penggunaan packages adalah membuat request ke server menggunakan protokol http. Custom navigation/route handling menggunakan fluro, dsb. 
+
+Secara singkat, dart package terdapat pada direktori yang didalamnya terdapat file pubspec.yaml. Contoh penggunaan packages adalah membuat request ke server menggunakan protokol http. Custom navigation/route handling menggunakan fluro, dsb.
 
 ### Cara menambahkan packages:
-1. Buka pub.dev 
+
+1. Buka pub.dev
 2. Lalu cari package yg akan digunakan, disini kita akan menggunakan Google Font<br><img src="img/pubdev.png" width="500px">
 3. Buka file pubspec.yaml
 4. Tambahkan ke file pubspec.yaml<br><img src="img/pubspec.png" width="400px">
@@ -47,10 +51,15 @@ Secara singkat, dart package terdapat pada direktori yang didalamnya terdapat fi
 7. Import packagenya ke file dart
 
 ## 2. User Interaction
+
 ### 2.1 Stateful dan Stateles
-Widget stateless tidak pernah berubah. Ikon, IconButton, dan Teks adalah contoh widget stateless. Sub kelas widget stateless StatelessWidget. Widget stateful bersifat dinamis misalnya, ia dapat mengubah tampilannya sebagai respons terhadap peristiwa yang dipicu oleh interaksi pengguna atau saat menerima data. Kotak centang, Radio, Slider, InkWell, Form, dan TextField adalah contoh widget stateful. Subkelas widget stateful StatefulWidget. 
+
+Widget stateless tidak pernah berubah. Ikon, IconButton, dan Teks adalah contoh widget stateless. Sub kelas widget stateless StatelessWidget. Widget stateful bersifat dinamis misalnya, ia dapat mengubah tampilannya sebagai respons terhadap peristiwa yang dipicu oleh interaksi pengguna atau saat menerima data. Kotak centang, Radio, Slider, InkWell, Form, dan TextField adalah contoh widget stateful. Subkelas widget stateful StatefulWidget.
+
 ### 2.2 Form
+
 Source Code main.dart:
+
 ```
 import 'package:flutter/material.dart';
 // import 'package:googlepon/my_bottomnav.dart';
@@ -67,12 +76,14 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyPackage(),  
+      home: MyPackage(),
     );
   }
 }
 ```
+
 Source Code my_package.dart:
+
 ```
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -132,10 +143,14 @@ class MyPackage extends StatelessWidget {
 }
 
 ```
+
 Output Code:<br>
 ![img](img/form.png)
+
 ### 2.3 Menu
+
 Source Code main.dart:
+
 ```
 import 'package:flutter/material.dart';
 // import 'package:googlepon/my_bottomnav.dart';
@@ -152,12 +167,14 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyTabbar(),  
+      home: MyTabbar(),
     );
   }
 }
 ```
+
 Source Code my_tabbar.dart:
+
 ```
 import 'package:flutter/material.dart';
 
@@ -228,10 +245,14 @@ class MyTabbar extends StatelessWidget {
   }
 }
 ```
+
 Output Code:<br>
 ![img](img/tabbar.png)
+
 ### 2.4 Buttons
+
 Source Code main.dart:
+
 ```
 import 'package:flutter/material.dart';
 import 'package:googlepon/my_bottomnav.dart';
@@ -248,12 +269,14 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyBottomNavBar(),  
+      home: MyBottomNavBar(),
     );
   }
 }
 ```
+
 Source Code my_bottomnav.dart:
+
 ```
 import 'package:flutter/material.dart';
 
@@ -361,11 +384,14 @@ class _MyBottomNavBarState extends State<MyBottomNavBar> {
   }
 }
 ```
+
 Output Code:<br>
 ![img](img/bottomNavbar.png)
 
 # Unguided
+
 ## Source Code:
+
 ```
 import 'package:flutter/material.dart';
 
@@ -505,8 +531,11 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
+
 ## Output Code:
+
 ![unguided](img/unguided.png)
 
 ## Penjelasan:
+
 Kode di atas akan menampilkan tampilan aplikasi dengan tiga halaman utama: "Home", "Wisata", dan "Profile". Dengan menggunakan widget PageView dan PageController, perpindahan antar halaman ini akan diiringi animasi transisi yang mulus. Di halaman "Home", terdapat form di bagian atas untuk mengisi nama dan email, serta tombol submit tanpa fungsi khusus. BottomNavigationBar digunakan untuk navigasi antar halaman, dan setiap kali ikon ditekan, aplikasi akan mengubah halaman menggunakan animasi sesuai dengan pengaturan pada PageController.
