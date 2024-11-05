@@ -377,5 +377,5 @@ class ProductDetailPage extends StatelessWidget {
 
 ```
 Output Code:<br>
-<img src="img/1.unguided.png" width=250px>
-<img src="img/2.unguided.png" width=250px>
+<img src="img/1.guided.png" width=250px>
+<img src="img/2.guided.png" width=250px>
